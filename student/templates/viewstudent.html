@@ -1,0 +1,19 @@
+<h1>Students</h1>
+
+<table border="1">
+{% for x in mymembers %}
+<tr>
+    <td><a href="update/{{ x.StudentId }}">{{ x.StudentId }}</a></td>
+    <td>{{ x.StudentId }}</td>
+    <td>{{ x.StudentName }}</td>
+    <td>{{ x.Gender }}</td>
+    <td>{{ x.Year }}</td>
+    <td>{{ x.ClassId }}</td>
+    <td><a href="delete/{{ x.StudentId }}">delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<p>
+<a href="add/">Add Student</a>
+</p>
